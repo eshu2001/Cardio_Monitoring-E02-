@@ -56,8 +56,6 @@ npm start
 **Expected output:**
 Server running on port 3000
 
-Routes loaded: /api/register, /api/login
-
 MongoDB connected
 
 2. Start the Frontend
