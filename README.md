@@ -48,7 +48,9 @@ MongoDB
 The backend runs on port 3000.
 
 cd backend
+
 npm install
+
 npm start
 
 **Expected output:**
@@ -61,7 +63,9 @@ MongoDB connected
 The Angular frontend runs on port 4200, mapped to port 80 for convenience.
 
 cd frontend
+
 npm install
+
 npm start
 
 
