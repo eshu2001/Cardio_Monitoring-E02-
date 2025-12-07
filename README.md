@@ -7,7 +7,7 @@ The Dashboard presents an overview of the selected research article, summarizing
 The frontend is developed using Angular, while the backend is built with Node.js and Express, connected to a MongoDB database. The application is hosted on a single server with NGINX serving the Angular frontend and the Node backend running on port 3000. Accessibility considerations (ARIA labels, keyboard navigation, and semantic HTML) are incorporated throughout the UI. Overall, the app provides a functional, modern, and accessible interface to explore real-world healthcare innovation data.
 
 ----------------------------------------------------------------------------------------------
-🚀** Features**
+🚀**Features**
 
 User authentication (Signup + Login)
 
@@ -33,7 +33,7 @@ Username: Eshita
 Password: Eshita
 
 ----------------------------------------------------------------------------------------------
-🛠️ Prerequisites
+🛠️ **Prerequisites**
 
 **Make sure the following are installed:**
 
@@ -42,7 +42,7 @@ Node.js (v14 or higher)
 MongoDB
 
 ----------------------------------------------------------------------------------------------
-▶️** How to Run the Project**
+▶️**How to Run the Project**
 1. Start the Backend
 
 The backend runs on port 3000.
@@ -51,7 +51,7 @@ cd backend
 npm install
 npm start
 
-Expected output:
+**Expected output:**
 Server running on port 3000
 Routes loaded: /api/register, /api/login
 MongoDB connected
@@ -65,5 +65,5 @@ npm install
 npm start
 
 
-Once running, open your browser:
+**Once running, open your browser:**
 http://localhost:80
