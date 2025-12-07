@@ -1,0 +1,5 @@
+/* Login specific styles */
+.card-title {
+    color: var(--medical-blue);
+    font-weight: 600;
+}

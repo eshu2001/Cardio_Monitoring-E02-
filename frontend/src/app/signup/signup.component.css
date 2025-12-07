@@ -1,0 +1,5 @@
+/* Using global glass-card styles */
+.card-title {
+    color: var(--medical-blue);
+    font-weight: 600;
+}
