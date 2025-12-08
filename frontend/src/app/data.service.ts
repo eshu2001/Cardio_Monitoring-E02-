@@ -7,7 +7,7 @@ import { AuthService } from './auth.service';
     providedIn: 'root'
 })
 export class DataService {
-    private baseUrl = 'http://localhost:3000/api';
+    private baseUrl = '/api';
 
     constructor(private http: HttpClient, private authService: AuthService) { }
 

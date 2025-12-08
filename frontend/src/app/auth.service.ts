@@ -7,7 +7,7 @@ import { Observable, tap } from 'rxjs';
     providedIn: 'root'
 })
 export class AuthService {
-    private apiUrl = 'http://localhost:3000/api/login';
+    private apiUrl = '/api/login';
     private tokenKey = 'auth_token';
     private userKey = 'auth_user';
 
@@ -25,7 +25,7 @@ export class AuthService {
     }
 
     register(username: string, password: string): Observable<any> {
-        return this.http.post<any>('http://localhost:3000/api/register', { username, password });
+        return this.http.post<any>('/api/register', { username, password });
     }
 
     logout(): void {
