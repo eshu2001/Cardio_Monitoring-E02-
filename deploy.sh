@@ -105,6 +105,14 @@ mkdir -p /var/www/html
 BUILD_PATH=$(find frontend/dist -name index.html | xargs dirname)
 cp -r $BUILD_PATH/* /var/www/html/
 
+# Fix Permissions (Critical for NGINX/SELinux)
+echo "Fixing Permissions..."
+chmod -R 755 /var/www/html
+# Allow NGINX to read files on CentOS/RHEL (SELinux)
+if command -v chcon &> /dev/null; then
+    chcon -R -t httpd_sys_content_t /var/www/html
+fi
+
 # Restart NGINX
 if [ "$OS" == "debian" ]; then
     systemctl restart nginx
