@@ -111,6 +111,8 @@ chmod -R 755 /var/www/html
 # Allow NGINX to read files on CentOS/RHEL (SELinux)
 if command -v chcon &> /dev/null; then
     chcon -R -t httpd_sys_content_t /var/www/html
+    # Critical: Allow NGINX to proxy to localhost:3000
+    setsebool -P httpd_can_network_connect 1 || true
 fi
 
 # Restart NGINX
